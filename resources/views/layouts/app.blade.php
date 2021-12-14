@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -22,15 +23,9 @@
         <x-jet-banner />
         @livewire('navigation-menu')
 
-        <!-- Page Heading -->
-        <header class="d-flex py-3 bg-white shadow-sm border-bottom">
-            <div class="container">
-                {{ $header }}
-            </div>
-        </header>
 
         <!-- Page Content -->
-        <main class="container my-5">
+        <main class="">
             {{ $slot }}
         </main>
 
